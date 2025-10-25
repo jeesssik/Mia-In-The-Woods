@@ -49,14 +49,14 @@ Se usaron las siguientes herramientas para la creación de arte y animaciones:
 - Script base: `Assets/Scripts/Mia.cs` (comportamiento inicial y pruebas).
 - TODO:
   - [ ] Configurar Animator Controller y estados (idle, walk, jump, hit).
-  - [ ] Transiciones con parámetros (Speed, IsGrounded, etc.).
-  - [ ] Aplicar principios por clip (anticipation en jump, overlap en cape/hair, etc.).
+  - [✔] Transiciones con parámetros (Speed, IsGrounded, etc.).
+ 
 
 ## Roadmap
-- [ ] Crear escena de prueba en `Assets/Scenes/` con cámara Pixel Perfect.
-- [ ] Importar y recortar sprites; crear Sprite Library (si corresponde).
+
+- [✔] Importar y recortar sprites
 - [ ] Montar Animator Controller para Mia.
-- [ ] Implementar input básico y movimiento 2D.
+- [✔] Implementar input básico y movimiento 2D.
 - [ ] Integrar clips demostrando cada principio de animación.
 - [ ] Capturas/GIFs de referencia en `Docs/` (cuando estén).
 
