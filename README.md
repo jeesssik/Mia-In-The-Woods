@@ -82,16 +82,7 @@ Las animaciones fueron integradas mediante el **Animator Controller** de Unity. 
 
 ---
 
-### 🧠 Lógica de Control del Jugador  
 
-El controlador del jugador activa las animaciones mediante parámetros del Animator:  
-
-```csharp
-animator.SetBool("isJumping", !isGrounded);
-animator.SetTrigger("Attack");
-```
-
----
 
 ## 🧩 Principios de Animación Aplicados  
 
@@ -128,7 +119,6 @@ Este documento acompaña al proyecto y analiza la aplicación de los principios 
 - 🎨 **LibreSprite** — creación de sprites del personaje.  
 - 🖌️ **Pixel Studio** — arte de fondo animado.  
 - 🧠 **Visual Studio Code** — scripting y control de animaciones.  
-- 🔊 *(Opcional)* **Bfxr / Audacity** — diseño de efectos sonoros.
 
 ---
 
