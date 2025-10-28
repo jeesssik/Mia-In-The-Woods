@@ -1,4 +1,3 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,7 +11,7 @@ public class Mia : MonoBehaviour
     [Header("Salto")]
     [SerializeField] private float fuerzaSalto = 12f;
     [SerializeField] private Transform groundCheck;
-    [SerializeField] private float groundCheckRadio = 0.12f;
+    [SerializeField] private float groundCheckRadio = 0.15f;
     [SerializeField] private LayerMask groundLayer;
 
     [Header("Ataque")]
@@ -29,8 +28,7 @@ public class Mia : MonoBehaviour
     private float proximoAtaque;
     private bool estaMuerta = false;
 
-    // --- NUEVO ---
-    private bool estabaEnSuelo = true; // para detectar cuándo aterriza
+    private bool estabaEnSuelo = true; // detectar aterrizaje
 
     void Awake()
     {
@@ -69,13 +67,13 @@ public class Mia : MonoBehaviour
         if (EstaEnSuelo())
         {
             var v = rb.velocity;
-            v.y = 0f; 
+            v.y = 0f;
             rb.velocity = v;
 
             rb.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
 
             if (animator)
-                animator.SetTrigger("Jump"); // Se dispara la animación JumpStart
+                animator.SetTrigger("Jump"); // animación de anticipación al salto
         }
     }
 
@@ -85,7 +83,6 @@ public class Mia : MonoBehaviour
         proximoAtaque = Time.time + ataqueCooldown;
 
         if (animator) animator.SetTrigger("Attack");
-        // Aquí podrías activar una hitbox o llamar a un script de daño
     }
 
     private bool EstaEnSuelo()
@@ -115,8 +112,7 @@ public class Mia : MonoBehaviour
         bool enSuelo = EstaEnSuelo();
         bool estaCayendo = rb.velocity.y < -0.1f && !enSuelo;
 
-        // --- NUEVO ---
-        // Detectar cuándo acaba de aterrizar (deja de estar en el aire y toca el suelo)
+        // Detectar aterrizaje
         if (!estabaEnSuelo && enSuelo)
         {
             animator.SetTrigger("Land");
@@ -128,7 +124,7 @@ public class Mia : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(inputX));
         animator.SetBool("IsGrounded", enSuelo);
         animator.SetBool("IsFalling", estaCayendo);
-        animator.SetFloat("YVelocity", rb.velocity.y); // opcional, útil si lo querés usar
+        animator.SetFloat("YVelocity", rb.velocity.y);
     }
 
     public void RecibirDaño(int cantidad)
@@ -151,7 +147,6 @@ public class Mia : MonoBehaviour
         estaMuerta = true;
         rb.velocity = Vector2.zero;
         if (animator) animator.SetBool("Dead", true);
-        // Desactivar colisiones o controles si querés
     }
 
     void OnDrawGizmosSelected()
