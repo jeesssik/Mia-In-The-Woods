@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 17647337}
   - component: {fileID: 17647340}
   - component: {fileID: 17647339}
-  - component: {fileID: 17647338}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (10)
   m_TagString: Untagged
@@ -156,51 +155,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &17647338
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 17647336}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &17647339
 Rigidbody2D:
   serializedVersion: 4
@@ -390,7 +344,6 @@ GameObject:
   - component: {fileID: 21025296}
   - component: {fileID: 21025299}
   - component: {fileID: 21025298}
-  - component: {fileID: 21025297}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (30)
   m_TagString: Untagged
@@ -413,51 +366,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &21025297
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 21025295}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &21025298
 Rigidbody2D:
   serializedVersion: 4
@@ -548,7 +456,6 @@ GameObject:
   - component: {fileID: 36982364}
   - component: {fileID: 36982367}
   - component: {fileID: 36982366}
-  - component: {fileID: 36982365}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (31)
   m_TagString: Untagged
@@ -571,51 +478,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &36982365
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36982363}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &36982366
 Rigidbody2D:
   serializedVersion: 4
@@ -781,7 +643,6 @@ GameObject:
   - component: {fileID: 88660320}
   - component: {fileID: 88660323}
   - component: {fileID: 88660322}
-  - component: {fileID: 88660321}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (9)
   m_TagString: Untagged
@@ -804,51 +665,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &88660321
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 88660319}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &88660322
 Rigidbody2D:
   serializedVersion: 4
@@ -1126,7 +942,6 @@ GameObject:
   - component: {fileID: 133919548}
   - component: {fileID: 133919551}
   - component: {fileID: 133919550}
-  - component: {fileID: 133919549}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (32)
   m_TagString: Untagged
@@ -1149,51 +964,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &133919549
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 133919547}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &133919550
 Rigidbody2D:
   serializedVersion: 4
@@ -1520,7 +1290,6 @@ GameObject:
   - component: {fileID: 217130873}
   - component: {fileID: 217130876}
   - component: {fileID: 217130875}
-  - component: {fileID: 217130874}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (35)
   m_TagString: Untagged
@@ -1543,51 +1312,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &217130874
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 217130872}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &217130875
 Rigidbody2D:
   serializedVersion: 4
@@ -1678,7 +1402,6 @@ GameObject:
   - component: {fileID: 227002536}
   - component: {fileID: 227002539}
   - component: {fileID: 227002538}
-  - component: {fileID: 227002537}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (1)
   m_TagString: Untagged
@@ -1701,51 +1424,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &227002537
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 227002535}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &227002538
 Rigidbody2D:
   serializedVersion: 4
@@ -2034,7 +1712,6 @@ GameObject:
   - component: {fileID: 326094527}
   - component: {fileID: 326094530}
   - component: {fileID: 326094529}
-  - component: {fileID: 326094528}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (25)
   m_TagString: Untagged
@@ -2057,51 +1734,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &326094528
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 326094526}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &326094529
 Rigidbody2D:
   serializedVersion: 4
@@ -2192,7 +1824,6 @@ GameObject:
   - component: {fileID: 345410655}
   - component: {fileID: 345410658}
   - component: {fileID: 345410657}
-  - component: {fileID: 345410656}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (5)
   m_TagString: Untagged
@@ -2215,51 +1846,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &345410656
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 345410654}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &345410657
 Rigidbody2D:
   serializedVersion: 4
@@ -2350,7 +1936,6 @@ GameObject:
   - component: {fileID: 355094876}
   - component: {fileID: 355094879}
   - component: {fileID: 355094878}
-  - component: {fileID: 355094877}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (26)
   m_TagString: Untagged
@@ -2373,51 +1958,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &355094877
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 355094875}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &355094878
 Rigidbody2D:
   serializedVersion: 4
@@ -2585,7 +2125,6 @@ GameObject:
   - component: {fileID: 418694315}
   - component: {fileID: 418694318}
   - component: {fileID: 418694317}
-  - component: {fileID: 418694316}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (14)
   m_TagString: Untagged
@@ -2608,51 +2147,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &418694316
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 418694314}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &418694317
 Rigidbody2D:
   serializedVersion: 4
@@ -2743,7 +2237,6 @@ GameObject:
   - component: {fileID: 439797288}
   - component: {fileID: 439797291}
   - component: {fileID: 439797290}
-  - component: {fileID: 439797289}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (54)
   m_TagString: Untagged
@@ -2766,51 +2259,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &439797289
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 439797287}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &439797290
 Rigidbody2D:
   serializedVersion: 4
@@ -2969,7 +2417,6 @@ GameObject:
   - component: {fileID: 518028471}
   - component: {fileID: 518028474}
   - component: {fileID: 518028473}
-  - component: {fileID: 518028472}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (23)
   m_TagString: Untagged
@@ -2992,51 +2439,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &518028472
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518028470}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &518028473
 Rigidbody2D:
   serializedVersion: 4
@@ -3219,7 +2621,6 @@ GameObject:
   - component: {fileID: 522436076}
   - component: {fileID: 522436079}
   - component: {fileID: 522436078}
-  - component: {fileID: 522436077}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (16)
   m_TagString: Untagged
@@ -3242,51 +2643,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &522436077
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 522436075}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &522436078
 Rigidbody2D:
   serializedVersion: 4
@@ -3377,7 +2733,6 @@ GameObject:
   - component: {fileID: 534751211}
   - component: {fileID: 534751214}
   - component: {fileID: 534751213}
-  - component: {fileID: 534751212}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (3)
   m_TagString: Untagged
@@ -3400,51 +2755,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &534751212
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534751210}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &534751213
 Rigidbody2D:
   serializedVersion: 4
@@ -3637,7 +2947,6 @@ GameObject:
   - component: {fileID: 558812945}
   - component: {fileID: 558812948}
   - component: {fileID: 558812947}
-  - component: {fileID: 558812946}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (53)
   m_TagString: Untagged
@@ -3660,51 +2969,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &558812946
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 558812944}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &558812947
 Rigidbody2D:
   serializedVersion: 4
@@ -3795,7 +3059,6 @@ GameObject:
   - component: {fileID: 560830144}
   - component: {fileID: 560830147}
   - component: {fileID: 560830146}
-  - component: {fileID: 560830145}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (40)
   m_TagString: Untagged
@@ -3818,51 +3081,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &560830145
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 560830143}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &560830146
 Rigidbody2D:
   serializedVersion: 4
@@ -3953,7 +3171,6 @@ GameObject:
   - component: {fileID: 569287333}
   - component: {fileID: 569287336}
   - component: {fileID: 569287335}
-  - component: {fileID: 569287334}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (13)
   m_TagString: Untagged
@@ -3976,51 +3193,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &569287334
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 569287332}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &569287335
 Rigidbody2D:
   serializedVersion: 4
@@ -4285,7 +3457,6 @@ GameObject:
   - component: {fileID: 642310819}
   - component: {fileID: 642310822}
   - component: {fileID: 642310821}
-  - component: {fileID: 642310820}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (12)
   m_TagString: Untagged
@@ -4308,51 +3479,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &642310820
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 642310818}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &642310821
 Rigidbody2D:
   serializedVersion: 4
@@ -4443,7 +3569,6 @@ GameObject:
   - component: {fileID: 670610483}
   - component: {fileID: 670610486}
   - component: {fileID: 670610485}
-  - component: {fileID: 670610484}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (33)
   m_TagString: Untagged
@@ -4466,51 +3591,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &670610484
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 670610482}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &670610485
 Rigidbody2D:
   serializedVersion: 4
@@ -4601,7 +3681,6 @@ GameObject:
   - component: {fileID: 683266030}
   - component: {fileID: 683266033}
   - component: {fileID: 683266032}
-  - component: {fileID: 683266031}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (50)
   m_TagString: Untagged
@@ -4624,51 +3703,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &683266031
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 683266029}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &683266032
 Rigidbody2D:
   serializedVersion: 4
@@ -4759,7 +3793,6 @@ GameObject:
   - component: {fileID: 689724934}
   - component: {fileID: 689724937}
   - component: {fileID: 689724936}
-  - component: {fileID: 689724935}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (46)
   m_TagString: Untagged
@@ -4782,51 +3815,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &689724935
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 689724933}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &689724936
 Rigidbody2D:
   serializedVersion: 4
@@ -4917,7 +3905,6 @@ GameObject:
   - component: {fileID: 740097223}
   - component: {fileID: 740097226}
   - component: {fileID: 740097225}
-  - component: {fileID: 740097224}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (47)
   m_TagString: Untagged
@@ -4940,51 +3927,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &740097224
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 740097222}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &740097225
 Rigidbody2D:
   serializedVersion: 4
@@ -5159,7 +4101,6 @@ GameObject:
   - component: {fileID: 815178355}
   - component: {fileID: 815178358}
   - component: {fileID: 815178357}
-  - component: {fileID: 815178356}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (24)
   m_TagString: Untagged
@@ -5182,51 +4123,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &815178356
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 815178354}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &815178357
 Rigidbody2D:
   serializedVersion: 4
@@ -5317,7 +4213,6 @@ GameObject:
   - component: {fileID: 825139464}
   - component: {fileID: 825139467}
   - component: {fileID: 825139466}
-  - component: {fileID: 825139465}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (39)
   m_TagString: Untagged
@@ -5340,51 +4235,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &825139465
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825139463}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &825139466
 Rigidbody2D:
   serializedVersion: 4
@@ -5475,7 +4325,6 @@ GameObject:
   - component: {fileID: 907331830}
   - component: {fileID: 907331833}
   - component: {fileID: 907331832}
-  - component: {fileID: 907331831}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (43)
   m_TagString: Untagged
@@ -5498,51 +4347,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &907331831
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 907331829}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &907331832
 Rigidbody2D:
   serializedVersion: 4
@@ -5732,7 +4536,6 @@ GameObject:
   - component: {fileID: 954290235}
   - component: {fileID: 954290238}
   - component: {fileID: 954290237}
-  - component: {fileID: 954290236}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (49)
   m_TagString: Untagged
@@ -5755,51 +4558,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &954290236
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954290234}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &954290237
 Rigidbody2D:
   serializedVersion: 4
@@ -5890,7 +4648,6 @@ GameObject:
   - component: {fileID: 981455191}
   - component: {fileID: 981455194}
   - component: {fileID: 981455193}
-  - component: {fileID: 981455192}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (17)
   m_TagString: Untagged
@@ -5913,51 +4670,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &981455192
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981455190}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &981455193
 Rigidbody2D:
   serializedVersion: 4
@@ -6147,7 +4859,6 @@ GameObject:
   - component: {fileID: 1033482239}
   - component: {fileID: 1033482242}
   - component: {fileID: 1033482241}
-  - component: {fileID: 1033482240}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (2)
   m_TagString: Untagged
@@ -6170,51 +4881,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1033482240
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1033482238}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &1033482241
 Rigidbody2D:
   serializedVersion: 4
@@ -6305,7 +4971,6 @@ GameObject:
   - component: {fileID: 1042530311}
   - component: {fileID: 1042530314}
   - component: {fileID: 1042530313}
-  - component: {fileID: 1042530312}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (36)
   m_TagString: Untagged
@@ -6328,51 +4993,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1042530312
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1042530310}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &1042530313
 Rigidbody2D:
   serializedVersion: 4
@@ -6666,7 +5286,6 @@ GameObject:
   - component: {fileID: 1061513935}
   - component: {fileID: 1061513938}
   - component: {fileID: 1061513937}
-  - component: {fileID: 1061513936}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (18)
   m_TagString: Untagged
@@ -6689,51 +5308,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1061513936
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1061513934}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &1061513937
 Rigidbody2D:
   serializedVersion: 4
@@ -6923,7 +5497,6 @@ GameObject:
   - component: {fileID: 1096387432}
   - component: {fileID: 1096387435}
   - component: {fileID: 1096387434}
-  - component: {fileID: 1096387433}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (15)
   m_TagString: Untagged
@@ -6946,51 +5519,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1096387433
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1096387431}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &1096387434
 Rigidbody2D:
   serializedVersion: 4
@@ -7081,7 +5609,6 @@ GameObject:
   - component: {fileID: 1119765781}
   - component: {fileID: 1119765784}
   - component: {fileID: 1119765783}
-  - component: {fileID: 1119765782}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (11)
   m_TagString: Untagged
@@ -7104,51 +5631,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1119765782
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1119765780}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &1119765783
 Rigidbody2D:
   serializedVersion: 4
@@ -7239,7 +5721,6 @@ GameObject:
   - component: {fileID: 1199550254}
   - component: {fileID: 1199550257}
   - component: {fileID: 1199550256}
-  - component: {fileID: 1199550255}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (6)
   m_TagString: Untagged
@@ -7262,51 +5743,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1199550255
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1199550253}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &1199550256
 Rigidbody2D:
   serializedVersion: 4
@@ -7397,7 +5833,6 @@ GameObject:
   - component: {fileID: 1210634422}
   - component: {fileID: 1210634425}
   - component: {fileID: 1210634424}
-  - component: {fileID: 1210634423}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (45)
   m_TagString: Untagged
@@ -7420,51 +5855,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1210634423
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210634421}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &1210634424
 Rigidbody2D:
   serializedVersion: 4
@@ -7632,7 +6022,6 @@ GameObject:
   - component: {fileID: 1246694618}
   - component: {fileID: 1246694621}
   - component: {fileID: 1246694620}
-  - component: {fileID: 1246694619}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (21)
   m_TagString: Untagged
@@ -7655,51 +6044,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1246694619
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1246694617}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &1246694620
 Rigidbody2D:
   serializedVersion: 4
@@ -8202,7 +6546,6 @@ GameObject:
   - component: {fileID: 1435138555}
   - component: {fileID: 1435138558}
   - component: {fileID: 1435138557}
-  - component: {fileID: 1435138556}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (7)
   m_TagString: Untagged
@@ -8225,51 +6568,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1435138556
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1435138554}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &1435138557
 Rigidbody2D:
   serializedVersion: 4
@@ -8360,7 +6658,6 @@ GameObject:
   - component: {fileID: 1457050115}
   - component: {fileID: 1457050118}
   - component: {fileID: 1457050117}
-  - component: {fileID: 1457050116}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (38)
   m_TagString: Untagged
@@ -8383,51 +6680,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1457050116
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1457050114}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &1457050117
 Rigidbody2D:
   serializedVersion: 4
@@ -8518,7 +6770,6 @@ GameObject:
   - component: {fileID: 1474185445}
   - component: {fileID: 1474185448}
   - component: {fileID: 1474185447}
-  - component: {fileID: 1474185446}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (27)
   m_TagString: Untagged
@@ -8541,51 +6792,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1474185446
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1474185444}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &1474185447
 Rigidbody2D:
   serializedVersion: 4
@@ -8676,7 +6882,6 @@ GameObject:
   - component: {fileID: 1485023837}
   - component: {fileID: 1485023840}
   - component: {fileID: 1485023839}
-  - component: {fileID: 1485023838}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (37)
   m_TagString: Untagged
@@ -8699,51 +6904,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1485023838
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1485023836}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &1485023839
 Rigidbody2D:
   serializedVersion: 4
@@ -8933,7 +7093,6 @@ GameObject:
   - component: {fileID: 1651258218}
   - component: {fileID: 1651258221}
   - component: {fileID: 1651258220}
-  - component: {fileID: 1651258219}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (34)
   m_TagString: Untagged
@@ -8956,51 +7115,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1651258219
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1651258217}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &1651258220
 Rigidbody2D:
   serializedVersion: 4
@@ -9091,7 +7205,6 @@ GameObject:
   - component: {fileID: 1669050162}
   - component: {fileID: 1669050165}
   - component: {fileID: 1669050164}
-  - component: {fileID: 1669050163}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (19)
   m_TagString: Untagged
@@ -9114,51 +7227,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1669050163
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1669050161}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &1669050164
 Rigidbody2D:
   serializedVersion: 4
@@ -9253,7 +7321,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1685060107
 Transform:
   m_ObjectHideFlags: 0
@@ -9288,7 +7356,6 @@ GameObject:
   - component: {fileID: 1704525713}
   - component: {fileID: 1704525716}
   - component: {fileID: 1704525715}
-  - component: {fileID: 1704525714}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (8)
   m_TagString: Untagged
@@ -9311,51 +7378,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1704525714
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1704525712}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &1704525715
 Rigidbody2D:
   serializedVersion: 4
@@ -9446,7 +7468,6 @@ GameObject:
   - component: {fileID: 1707458307}
   - component: {fileID: 1707458310}
   - component: {fileID: 1707458309}
-  - component: {fileID: 1707458308}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (29)
   m_TagString: Untagged
@@ -9469,51 +7490,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1707458308
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1707458306}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &1707458309
 Rigidbody2D:
   serializedVersion: 4
@@ -9604,7 +7580,6 @@ GameObject:
   - component: {fileID: 1811662956}
   - component: {fileID: 1811662959}
   - component: {fileID: 1811662958}
-  - component: {fileID: 1811662957}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (20)
   m_TagString: Untagged
@@ -9627,51 +7602,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1811662957
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1811662955}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &1811662958
 Rigidbody2D:
   serializedVersion: 4
@@ -9762,7 +7692,6 @@ GameObject:
   - component: {fileID: 1826319849}
   - component: {fileID: 1826319852}
   - component: {fileID: 1826319851}
-  - component: {fileID: 1826319850}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (52)
   m_TagString: Untagged
@@ -9785,51 +7714,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1826319850
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1826319848}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &1826319851
 Rigidbody2D:
   serializedVersion: 4
@@ -9920,7 +7804,6 @@ GameObject:
   - component: {fileID: 1862286970}
   - component: {fileID: 1862286973}
   - component: {fileID: 1862286972}
-  - component: {fileID: 1862286971}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (48)
   m_TagString: Untagged
@@ -9943,51 +7826,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1862286971
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1862286969}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &1862286972
 Rigidbody2D:
   serializedVersion: 4
@@ -10163,7 +8001,6 @@ GameObject:
   - component: {fileID: 1930468912}
   - component: {fileID: 1930468915}
   - component: {fileID: 1930468914}
-  - component: {fileID: 1930468913}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (41)
   m_TagString: Untagged
@@ -10186,51 +8023,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1930468913
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1930468911}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &1930468914
 Rigidbody2D:
   serializedVersion: 4
@@ -10321,7 +8113,6 @@ GameObject:
   - component: {fileID: 1955497366}
   - component: {fileID: 1955497369}
   - component: {fileID: 1955497368}
-  - component: {fileID: 1955497367}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (4)
   m_TagString: Untagged
@@ -10344,51 +8135,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1955497367
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1955497365}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &1955497368
 Rigidbody2D:
   serializedVersion: 4
@@ -10479,7 +8225,6 @@ GameObject:
   - component: {fileID: 2019768014}
   - component: {fileID: 2019768017}
   - component: {fileID: 2019768016}
-  - component: {fileID: 2019768015}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (22)
   m_TagString: Untagged
@@ -10502,51 +8247,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2019768015
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019768013}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &2019768016
 Rigidbody2D:
   serializedVersion: 4
@@ -10637,7 +8337,6 @@ GameObject:
   - component: {fileID: 2027776705}
   - component: {fileID: 2027776708}
   - component: {fileID: 2027776707}
-  - component: {fileID: 2027776706}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (28)
   m_TagString: Untagged
@@ -10660,51 +8359,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2027776706
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2027776704}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.17}
-  m_EdgeRadius: 0
 --- !u!50 &2027776707
 Rigidbody2D:
   serializedVersion: 4
@@ -10929,7 +8583,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.005287096}
+  m_Offset: {x: 2.1477907, y: -0.005287096}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -10940,7 +8594,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.15942582}
+  m_Size: {x: 4.4655814, y: 0.15942582}
   m_EdgeRadius: 0
 --- !u!1 &2100511812
 GameObject:
@@ -10953,7 +8607,6 @@ GameObject:
   - component: {fileID: 2100511813}
   - component: {fileID: 2100511816}
   - component: {fileID: 2100511815}
-  - component: {fileID: 2100511814}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (42)
   m_TagString: Untagged
@@ -10976,51 +8629,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2100511814
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2100511812}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &2100511815
 Rigidbody2D:
   serializedVersion: 4
@@ -11111,7 +8719,6 @@ GameObject:
   - component: {fileID: 2108023116}
   - component: {fileID: 2108023119}
   - component: {fileID: 2108023118}
-  - component: {fileID: 2108023117}
   m_Layer: 6
   m_Name: Mapa-de-tejas_0 (44)
   m_TagString: Untagged
@@ -11134,51 +8741,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1869784719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2108023117
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2108023115}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0049635917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.17}
-    newSize: {x: 0.17, y: 0.17}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.16007283}
-  m_EdgeRadius: 0
 --- !u!50 &2108023118
 Rigidbody2D:
   serializedVersion: 4

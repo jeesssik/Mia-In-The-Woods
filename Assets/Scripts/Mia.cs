@@ -27,7 +27,7 @@ public class Mia : MonoBehaviour
     private float inputX;
     private float proximoAtaque;
     private bool estaMuerta = false;
-
+private bool estaSaltando = false;
     private bool estabaEnSuelo = true; // detectar aterrizaje
 
     void Awake()
@@ -63,19 +63,22 @@ public class Mia : MonoBehaviour
     }
 
     private void IntentarSaltar()
+{
+    if (EstaEnSuelo() && !estaSaltando)
     {
-        if (EstaEnSuelo())
-        {
-            var v = rb.velocity;
-            v.y = 0f;
-            rb.velocity = v;
+        estaSaltando = true;
 
-            rb.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
+        var v = rb.velocity;
+        v.y = 0f;
+        rb.velocity = v;
 
-            if (animator)
-                animator.SetTrigger("Jump"); // animación de anticipación al salto
-        }
+        rb.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
+
+        if (animator)
+            animator.SetTrigger("Jump");
     }
+}
+
 
     private void IntentarAtacar()
     {
@@ -111,6 +114,10 @@ public class Mia : MonoBehaviour
 
         bool enSuelo = EstaEnSuelo();
         bool estaCayendo = rb.velocity.y < -0.1f && !enSuelo;
+        if (enSuelo)
+{
+    estaSaltando = false;
+}
 
         // Detectar aterrizaje
         if (!estabaEnSuelo && enSuelo)
@@ -121,7 +128,8 @@ public class Mia : MonoBehaviour
         estabaEnSuelo = enSuelo;
 
         // Parámetros comunes
-        animator.SetFloat("Speed", Mathf.Abs(inputX));
+        //animator.SetFloat("Speed", Mathf.Abs(inputX));
+        animator.SetFloat("Speed", EstaEnSuelo() ? Mathf.Abs(inputX) : 0f);
         animator.SetBool("IsGrounded", enSuelo);
         animator.SetBool("IsFalling", estaCayendo);
         animator.SetFloat("YVelocity", rb.velocity.y);
