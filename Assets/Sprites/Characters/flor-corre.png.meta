@@ -121,7 +121,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: flor-corre_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 10
+        width: 56
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c847ce8dca1e52e459e9cbc112d5d7be
+      internalID: -371455104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flor-corre_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 22
+        width: 56
+        height: 60
+      alignment: 9
+      pivot: {x: 0.5, y: -0.19919248}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 857ab707fee44424ba3909161d9e3437
+      internalID: 1108602705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flor-corre_2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 30
+        width: 60
+        height: 60
+      alignment: 9
+      pivot: {x: 0.49368006, y: -0.3252794}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d33ce6c3e8d7640aca69376009c9af
+      internalID: 1543950413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flor-corre_3
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 22
+        width: 56
+        height: 68
+      alignment: 9
+      pivot: {x: 0.5049373, y: -0.17626356}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51cd4767e3404f449eaea16769b7bbf
+      internalID: 2144259277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flor-corre_4
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 10
+        width: 56
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af4098eb5d552d46ba8a0c0ef64ce83
+      internalID: 927626767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flor-corre_5
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 18
+        width: 56
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6ba428cd8ff634eb3e968aac4513e1
+      internalID: 719604253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flor-corre_6
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 22
+        width: 56
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c5c73501db328f4ba74b68ab7facea1
+      internalID: -489435571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flor-corre_7
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 18
+        width: 56
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c1f631b88f15e4a8fec0975b2259f9
+      internalID: -646264550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +300,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flor-corre_0: -371455104
+      flor-corre_1: 1108602705
+      flor-corre_2: 1543950413
+      flor-corre_3: 2144259277
+      flor-corre_4: 927626767
+      flor-corre_5: 719604253
+      flor-corre_6: -489435571
+      flor-corre_7: -646264550
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
