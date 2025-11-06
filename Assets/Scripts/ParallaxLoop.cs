@@ -2,32 +2,27 @@ using UnityEngine;
 
 public class ParallaxLoop : MonoBehaviour
 {
-    public Transform player;
-    [Range(0f, 1f)] public float parallaxEffect = 0.5f;
+    [SerializeField] private Transform player;
+    [SerializeField, Range(0f, 1f)] private float parallaxFactor = 0.1f;
 
-    private float startPosX;
-    private float length;
+    private float startX;
+    private float startY;
 
     void Start()
     {
-        startPosX = transform.position.x;
-        length = GetComponent<SpriteRenderer>().bounds.size.x;
+        startX = transform.position.x;
+        startY = transform.position.y;
+
+        if (player == null)
+            player = GameObject.FindGameObjectWithTag("Player")?.transform;
     }
 
     void Update()
     {
-        float dist = player.position.x * parallaxEffect;
-        transform.position = new Vector3(startPosX + dist, transform.position.y, transform.position.z);
+        if (player == null) return;
 
-        float temp = player.position.x * (1 - parallaxEffect);
-
-        if (temp > startPosX + length)
-        {
-            startPosX += length;
-        }
-        else if (temp < startPosX - length)
-        {
-            startPosX -= length;
-        }
+        // Desplazamiento horizontal inverso al jugador
+        float distanceX = (player.position.x * parallaxFactor);
+        transform.position = new Vector3(startX - distanceX, startY, transform.position.z);
     }
 }
