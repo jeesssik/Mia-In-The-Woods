@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1054473473}
-  parallaxFactor: 0
+  parallaxLayers: []
 --- !u!212 &20801220
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -865,7 +865,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 99244046}
-  - component: {fileID: 99244047}
   m_Layer: 0
   m_Name: Layer 1
   m_TagString: Untagged
@@ -894,20 +893,6 @@ Transform:
   - {fileID: 1589333271}
   m_Father: {fileID: 1685060107}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &99244047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99244045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cc1083e49cc9874d8cb49f50a0a76a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1054473473}
-  parallaxFactor: 0.3
 --- !u!1 &120115580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1616,7 +1601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1054473473}
-  parallaxFactor: 0
+  parallaxLayers: []
 --- !u!1 &308404864
 GameObject:
   m_ObjectHideFlags: 0
@@ -1663,7 +1648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1054473473}
-  parallaxFactor: 0
+  parallaxLayers: []
 --- !u!212 &308404867
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2362,7 +2347,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 472061012}
-  - component: {fileID: 472061013}
   m_Layer: 0
   m_Name: Layer2
   m_TagString: Untagged
@@ -2388,20 +2372,6 @@ Transform:
   - {fileID: 1270373792}
   m_Father: {fileID: 1685060107}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &472061013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 472061011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cc1083e49cc9874d8cb49f50a0a76a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1054473473}
-  parallaxFactor: 0.15
 --- !u!1 &497506174
 GameObject:
   m_ObjectHideFlags: 0
@@ -3434,7 +3404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1054473473}
-  parallaxFactor: 0
+  parallaxLayers: []
 --- !u!1 &593615270
 GameObject:
   m_ObjectHideFlags: 0
@@ -4580,7 +4550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1054473473}
-  parallaxFactor: 0
+  parallaxLayers: []
 --- !u!212 &935825079
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4955,7 +4925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1054473473}
-  parallaxFactor: 0
+  parallaxLayers: []
 --- !u!1 &1033482238
 GameObject:
   m_ObjectHideFlags: 0
@@ -5593,7 +5563,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1054473473}
-  parallaxFactor: 0
+  parallaxLayers: []
 --- !u!1 &1096387431
 GameObject:
   m_ObjectHideFlags: 0
@@ -6277,7 +6247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1054473473}
-  parallaxFactor: 0
+  parallaxLayers: []
 --- !u!212 &1267401215
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6376,7 +6346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1054473473}
-  parallaxFactor: 0
+  parallaxLayers: []
 --- !u!212 &1270373794
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6748,7 +6718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1054473473}
-  parallaxFactor: 0
+  parallaxLayers: []
 --- !u!1 &1368552215
 GameObject:
   m_ObjectHideFlags: 0
@@ -6758,7 +6728,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1368552216}
-  - component: {fileID: 1368552217}
   m_Layer: 0
   m_Name: Layer3
   m_TagString: Untagged
@@ -6784,20 +6753,6 @@ Transform:
   - {fileID: 1388683581}
   m_Father: {fileID: 1685060107}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1368552217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1368552215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cc1083e49cc9874d8cb49f50a0a76a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1054473473}
-  parallaxFactor: 0.05
 --- !u!1 &1388683580
 GameObject:
   m_ObjectHideFlags: 0
@@ -6896,7 +6851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1054473473}
-  parallaxFactor: 0
+  parallaxLayers: []
 --- !u!1 &1435138554
 GameObject:
   m_ObjectHideFlags: 0
@@ -7391,7 +7346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1054473473}
-  parallaxFactor: 0
+  parallaxLayers: []
 --- !u!212 &1589333273
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7677,9 +7632,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1685060107}
+  - component: {fileID: 1685060108}
   m_Layer: 0
   m_Name: --Background--
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7704,6 +7660,29 @@ Transform:
   - {fileID: 1368552216}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1685060108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685060106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cc1083e49cc9874d8cb49f50a0a76a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  parallaxLayers:
+  - layerTransform: {fileID: 99244046}
+    parallaxFactor: 0.3
+    startPosition: {x: 0, y: 0, z: 0}
+  - layerTransform: {fileID: 472061012}
+    parallaxFactor: 0.5
+    startPosition: {x: 0, y: 0, z: 0}
+  - layerTransform: {fileID: 1368552216}
+    parallaxFactor: 0.05
+    startPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1704525712
 GameObject:
   m_ObjectHideFlags: 0
