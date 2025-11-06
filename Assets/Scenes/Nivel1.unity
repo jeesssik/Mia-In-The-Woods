@@ -7675,13 +7675,13 @@ MonoBehaviour:
   player: {fileID: 0}
   parallaxLayers:
   - layerTransform: {fileID: 99244046}
-    parallaxFactor: 0.3
+    parallaxFactor: 0.2
     startPosition: {x: 0, y: 0, z: 0}
   - layerTransform: {fileID: 472061012}
     parallaxFactor: 0.5
     startPosition: {x: 0, y: 0, z: 0}
   - layerTransform: {fileID: 1368552216}
-    parallaxFactor: 0.05
+    parallaxFactor: 0.8
     startPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1704525712
 GameObject:
