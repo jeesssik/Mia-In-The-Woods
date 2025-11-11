@@ -5343,6 +5343,8 @@ MonoBehaviour:
     m_Bits: 64
   ataqueCooldown: 0.3
   vidaMaxima: 3
+  attackHitbox: {fileID: 1593251861}
+  estimatedAttackDuration: 0.35
 --- !u!50 &1054473475
 Rigidbody2D:
   serializedVersion: 4
