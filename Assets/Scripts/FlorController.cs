@@ -2,30 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using System.Collections;
+using UnityEngine;
 
-[RequireComponent(typeof(Animator), typeof(SpriteRenderer))]
+[RequireComponent(typeof(Animator), typeof(SpriteRenderer), typeof(Rigidbody2D))]
 public class FlorController : MonoBehaviour
-
-   {
+{
     [Header("Movimiento")]
     public float moveSpeed = 2f;
-    public float stopDistance = 0.2f; // distancia mínima en X antes de superponer
+    public float stopDistance = 0.2f;
 
     [Header("Rangos (child colliders)")]
-    public Collider2D detectionCollider; // CircleCollider2D (IsTrigger)
-    public Collider2D attackCollider;    // CircleCollider2D (IsTrigger)
+    public Collider2D detectionCollider; // (child) trigger
+    public Collider2D attackCollider;    // (child) trigger
 
     [Header("Targets & Settings")]
-    public Transform currentTarget; // normalmente el player
+    public Transform currentTarget; // normalmente el player (se setea al detectar)
     public string playerTag = "Player";
 
     // Internos
     private Animator animator;
     private SpriteRenderer sr;
     private Rigidbody2D rb;
-    private bool playerDetected = false;
-    private bool playerInAttackRange = false;
-    private bool isAttacking = false;
+    [HideInInspector] public bool playerDetected = false;
+    [HideInInspector] public bool playerInAttackRange = false;
+    public bool isAttacking = false;
     private bool isDead = false;
 
     // Cooldowns
@@ -50,42 +51,30 @@ public class FlorController : MonoBehaviour
 
         if (playerDetected && currentTarget != null && !isAttacking)
         {
-            // Mirar al jugador (solo en X)
             FaceTarget();
 
-            // Si está en rango de ataque, intentamos atacar (se controla por triggers)
+            // Si está en rango de ataque, empezamos la rutina de ataque
             if (playerInAttackRange)
             {
+                // dejamos de movernos porque playerInAttackRange bloquea FixedUpdate movement
                 if (canAttack)
                     StartCoroutine(DoAttack());
-                    Debug.Log("Atacando al jugador");
             }
-            // si no está en rango de ataque, el movimiento se hace en FixedUpdate (físico)
         }
     }
-    private void DamagePlayer()
-{
-    if (currentTarget != null)
-    {
-        Mia player = currentTarget.GetComponent<Mia>();
-        if (player != null)
-            player.RecibirDaño(1); // daño de la flor
-    }
-}
 
     void FixedUpdate()
     {
         if (isDead) return;
 
-        // Movimiento físico: avanzar solo en X hacia el target
+        // Mover solo cuando detectó, hay target, no está atacando y NO está en rango de ataque
         if (playerDetected && currentTarget != null && !isAttacking && !playerInAttackRange)
         {
-            float dx = currentTarget.position.x - rb.position.x; // diferencia horizontal
+            float dx = currentTarget.position.x - rb.position.x;
             float absDx = Mathf.Abs(dx);
 
             if (absDx > stopDistance)
             {
-                // objetivo: misma Y actual del enemigo, X = player's X
                 Vector2 targetPos = new Vector2(currentTarget.position.x, rb.position.y);
                 float step = moveSpeed * Time.fixedDeltaTime;
                 Vector2 newPos = Vector2.MoveTowards(rb.position, targetPos, step);
@@ -96,12 +85,10 @@ public class FlorController : MonoBehaviour
 
     private void UpdateAnimatorSpeed()
     {
-        // Speed usa la distancia horizontal (más representativo)
         float speedValue = 0f;
         if (playerDetected && currentTarget != null && !isAttacking)
         {
             float dx = Mathf.Abs(currentTarget.position.x - transform.position.x);
-            // escala simple: si dx pequeño -> 0, si mayor -> hasta moveSpeed
             speedValue = Mathf.Clamp01(dx / 1.5f) * moveSpeed;
         }
         animator.SetFloat("Speed", speedValue);
@@ -121,6 +108,9 @@ public class FlorController : MonoBehaviour
 
         animator.SetTrigger("Attack");
 
+        // opcional: llamar EnableHitbox via AnimationEvent o usar aquí para breve demo:
+        // EnableHitbox();
+
         float estimatedAttackDuration = 0.6f;
         yield return new WaitForSeconds(estimatedAttackDuration);
 
@@ -129,69 +119,40 @@ public class FlorController : MonoBehaviour
         canAttack = true;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (isDead) return;
+    // --- Métodos públicos llamados por TriggerDelegator en los colliders hijos ---
 
-        if (other.CompareTag(playerTag))
-        {
-            if (other == detectionCollider)
-            {
-                OnPlayerDetected(other.transform);
-            }
-            else if (other == attackCollider)
-            {
-                OnPlayerEnterAttackRange();
-            }
-            else
-            {
-                OnPlayerDetected(other.transform);
-            }
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (isDead) return;
-
-        if (other.CompareTag(playerTag))
-        {
-            if (other == detectionCollider)
-            {
-                OnPlayerLost();
-            }
-            else if (other == attackCollider)
-            {
-                OnPlayerExitAttackRange();
-            }
-        }
-    }
-
-    private void OnPlayerDetected(Transform player)
+    public void OnDetectionEnter(Transform player)
     {
         playerDetected = true;
         currentTarget = player;
         animator.SetTrigger("Detect");
     }
 
-    private void OnPlayerLost()
+    public void OnDetectionExit(Transform player)
     {
+        // si sale el player detectado, reiniciar
         playerDetected = false;
         currentTarget = null;
         playerInAttackRange = false;
         animator.SetFloat("Speed", 0f);
     }
 
-    private void OnPlayerEnterAttackRange()
+    public void OnAttackEnter(Transform player)
     {
+        // Al entrar en el rango de ATTACK: deja de correr y empezará a atacar (Update gestionará DoAttack)
         playerInAttackRange = true;
+        currentTarget = player;
+        // opcional: forzar que deje de moverse
+        // isAttacking = false; // no lo ponemos true aquí; DoAttack lo hace
+        Debug.Log("Flor: jugador en rango de ataque -> dejar de correr, empezar ataque");
     }
 
-    private void OnPlayerExitAttackRange()
+    public void OnAttackExit(Transform player)
     {
         playerInAttackRange = false;
     }
 
+    // --- Daño y muerte ---
     public void ReceiveHit()
     {
         if (isDead) return;
@@ -206,6 +167,7 @@ public class FlorController : MonoBehaviour
         animator.SetBool("IsDead", true);
     }
 
+    // Método opcional llamado por Animation Event
     public void EndAttack()
     {
         isAttacking = false;
@@ -214,5 +176,16 @@ public class FlorController : MonoBehaviour
     public void OnDieAnimationEnd()
     {
         Destroy(gameObject);
+    }
+
+    // Método que el Animation Event puede llamar para aplicar daño al jugador
+    public void DamagePlayer()
+    {
+        if (currentTarget != null)
+        {
+            Mia player = currentTarget.GetComponent<Mia>();
+            if (player != null)
+                player.RecibirDaño(1);
+        }
     }
 }
