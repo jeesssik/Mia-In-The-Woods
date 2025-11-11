@@ -21,20 +21,32 @@ public class Mia : MonoBehaviour
     [SerializeField] private int vidaMaxima = 3;
     private int vidaActual;
 
+    [Header("Hitbox (asignar en inspector)")]
+    [Tooltip("Arrastrar el child AttackHitbox (GameObject) aquí")]
+    [SerializeField] private GameObject attackHitbox;
+    [Tooltip("Duración estimada de la ventana de impacto (fallback si el AnimationEvent no se dispara)")]
+    [SerializeField] private float estimatedAttackDuration = 0.35f;
+
     private Rigidbody2D rb;
     private Animator animator;
     private bool mirandoDerecha = true;
     private float inputX;
     private float proximoAtaque;
     private bool estaMuerta = false;
-private bool estaSaltando = false;
+    private bool estaSaltando = false;
     private bool estabaEnSuelo = true; // detectar aterrizaje
+
+    private Coroutine attackRoutine;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         vidaActual = vidaMaxima;
+
+        // Asegurarnos que el hitbox esté desactivado por defecto
+        if (attackHitbox != null)
+            attackHitbox.SetActive(false);
     }
 
     void Update()
@@ -63,29 +75,44 @@ private bool estaSaltando = false;
     }
 
     private void IntentarSaltar()
-{
-    if (EstaEnSuelo() && !estaSaltando)
     {
-        estaSaltando = true;
+        if (EstaEnSuelo() && !estaSaltando)
+        {
+            estaSaltando = true;
 
-        var v = rb.velocity;
-        v.y = 0f;
-        rb.velocity = v;
+            var v = rb.velocity;
+            v.y = 0f;
+            rb.velocity = v;
 
-        rb.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
 
-        if (animator)
-            animator.SetTrigger("Jump");
+            if (animator)
+                animator.SetTrigger("Jump");
+        }
     }
-}
-
 
     private void IntentarAtacar()
     {
         if (Time.time < proximoAtaque || !EstaEnSuelo()) return;
         proximoAtaque = Time.time + ataqueCooldown;
 
-        if (animator) animator.SetTrigger("Attack");
+        if (animator)
+            animator.SetTrigger("Attack");
+
+        // Fallback: activamos un coroutine que active el hitbox y lo desactive luego.
+        if (attackRoutine != null) StopCoroutine(attackRoutine);
+        attackRoutine = StartCoroutine(AttackHitboxRoutine());
+    }
+
+    // Coroutine fallback: activa el hitbox por un lapso estimado y luego lo desactiva.
+    private IEnumerator AttackHitboxRoutine()
+    {
+        if (attackHitbox == null) yield break;
+
+        attackHitbox.SetActive(true);
+        yield return new WaitForSeconds(estimatedAttackDuration);
+        attackHitbox.SetActive(false);
+        attackRoutine = null;
     }
 
     private bool EstaEnSuelo()
@@ -115,9 +142,9 @@ private bool estaSaltando = false;
         bool enSuelo = EstaEnSuelo();
         bool estaCayendo = rb.velocity.y < -0.1f && !enSuelo;
         if (enSuelo)
-{
-    estaSaltando = false;
-}
+        {
+            estaSaltando = false;
+        }
 
         // Detectar aterrizaje
         if (!estabaEnSuelo && enSuelo)
@@ -128,7 +155,6 @@ private bool estaSaltando = false;
         estabaEnSuelo = enSuelo;
 
         // Parámetros comunes
-        //animator.SetFloat("Speed", Mathf.Abs(inputX));
         animator.SetFloat("Speed", EstaEnSuelo() ? Mathf.Abs(inputX) : 0f);
         animator.SetBool("IsGrounded", enSuelo);
         animator.SetBool("IsFalling", estaCayendo);
@@ -164,15 +190,40 @@ private bool estaSaltando = false;
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadio);
     }
 
-    public void ActivarHitbox()
-{
-    transform.Find("AttackHitbox").gameObject.SetActive(true);
-    Debug.Log("Hitbox activada");
-}
+    // -------------------------
+    // Hitbox control (Animation Events + fallback)
+    // -------------------------
 
-public void DesactivarHitbox()
-{
-    transform.Find("AttackHitbox").gameObject.SetActive(false);
-    Debug.Log("Hitbox desactivada");
-}
+    // Método llamado por Animation Event para activar el hitbox
+    public void ActivarHitbox()
+    {
+        if (attackHitbox != null)
+        {
+            attackHitbox.SetActive(true);
+            Debug.Log("Hitbox activada (AnimationEvent)");
+        }
+
+        // Si existe fallback en ejecución, cancelarlo (porque el Event se encargó)
+        if (attackRoutine != null)
+        {
+            StopCoroutine(attackRoutine);
+            attackRoutine = null;
+        }
+    }
+
+    // Método llamado por Animation Event para desactivar el hitbox
+    public void DesactivarHitbox()
+    {
+        if (attackHitbox != null)
+        {
+            attackHitbox.SetActive(false);
+            Debug.Log("Hitbox desactivada (AnimationEvent)");
+        }
+
+        if (attackRoutine != null)
+        {
+            StopCoroutine(attackRoutine);
+            attackRoutine = null;
+        }
+    }
 }
