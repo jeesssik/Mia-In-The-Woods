@@ -75,7 +75,7 @@ sysinfo.txt
 *.manifest
 *.config
 *.log
-*.meta
+
 
 # Rider
 .idea/

@@ -7,7 +7,9 @@
 
 Este proyecto fue desarrollado en **Unity 2D** y tiene como objetivo integrar animaciones originales dentro de un entorno interactivo, donde las acciones del personaje respondan a la entrada del jugador.  
 
-El personaje principal, **Mia**, fue diseñado y animado cuadro a cuadro en pixel art. Se implementaron animaciones para los tres estados esenciales de un juego de acción o plataformas: **Idle**, **Jump** y **Attack**, aplicando de forma visible los **Doce Principios de la Animación** en un contexto digital interactivo.  
+El personaje principal, **Mia**, fue diseñado y animado cuadro a cuadro en pixel art. Se implementaron animaciones para los tres estados esenciales de un juego de acción o plataformas: **Idle**, **Jump** y **Attack**, aplicando de forma visible parte de los **Doce Principios de la Animación** en un contexto digital interactivo.  
+
+El personaje secundario, al igual que Mia due diseñado cuadro por cuadro pero con más detalle en las animaciones. Sus estados son **Idle**, **Detect**, **Run**, **Attack**, **Imapct** y **Death**, aplicando también parte de los **Doce Principios de la Animación**
 
 ---
 
@@ -63,9 +65,18 @@ A continuación se muestran las animaciones principales del personaje:
 ### 💡 Integración en el Motor  
 Las animaciones fueron integradas mediante el **Animator Controller** de Unity. Cada acción se activa según la entrada del jugador.  
 
+Mia:
 - **Idle** — Estado base al iniciar.  
 - **Jump** — Activado al presionar la tecla de salto.  
 - **Attack** — Activado al presionar la tecla de ataque.  
+
+Flor:
+- **Idle** - Estado base inicial.
+- **Detect** - Detecta cuando mía entra en el rango de detección.
+- **Run** - Una vez que detecta a Mia, corre hacia a ella con el propósito de atacarla.
+- **Attack** - Ataca a Mia.
+- **Impact** - Recibe daño de ataque del jugador.
+- **Death** - Muerte del personaje
 
 ---
 
