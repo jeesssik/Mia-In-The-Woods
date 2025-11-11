@@ -58,10 +58,20 @@ public class FlorController : MonoBehaviour
             {
                 if (canAttack)
                     StartCoroutine(DoAttack());
+                    Debug.Log("Atacando al jugador");
             }
             // si no está en rango de ataque, el movimiento se hace en FixedUpdate (físico)
         }
     }
+    private void DamagePlayer()
+{
+    if (currentTarget != null)
+    {
+        Mia player = currentTarget.GetComponent<Mia>();
+        if (player != null)
+            player.RecibirDaño(1); // daño de la flor
+    }
+}
 
     void FixedUpdate()
     {

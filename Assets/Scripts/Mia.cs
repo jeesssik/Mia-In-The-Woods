@@ -163,4 +163,16 @@ private bool estaSaltando = false;
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadio);
     }
+
+    public void ActivarHitbox()
+{
+    transform.Find("AttackHitbox").gameObject.SetActive(true);
+    Debug.Log("Hitbox activada");
+}
+
+public void DesactivarHitbox()
+{
+    transform.Find("AttackHitbox").gameObject.SetActive(false);
+    Debug.Log("Hitbox desactivada");
+}
 }

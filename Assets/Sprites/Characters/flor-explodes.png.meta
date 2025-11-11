@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,9 +106,190 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: flor-explodes_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 5
+        width: 52
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8625ab97a0844fa4496df2e1b848cc35
+      internalID: 496622333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flor-explodes_1
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 5
+        width: 82
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6652cca8bc2bff5489105a2c94134d0f
+      internalID: -2082064724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flor-explodes_2
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 5
+        width: 48
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c334e6e21b7384d8a91b9836e3e84e
+      internalID: 1404203786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flor-explodes_14
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 5
+        width: 99
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9390d5449c6ed42b7c0b4ac7724b49
+      internalID: 1221277527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flor-explodes_21
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 4
+        width: 104
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbcf80977f790ca49909ac1dd77b6370
+      internalID: -654927938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flor-explodes_23
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 5
+        width: 112
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7211be08b23959a4183ec7838c6682d0
+      internalID: -1256145131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flor-explodes_28
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 5
+        width: 105
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8341e24a248a8ac4ca69235b413c1a0a
+      internalID: -1558947214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flor-explodes_30
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 5
+        width: 106
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1fedeacf477d142ba3218742dfa0ab
+      internalID: 1108042615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +300,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flor-explodes_0: 496622333
+      flor-explodes_1: -2082064724
+      flor-explodes_10: -839144973
+      flor-explodes_11: 920934453
+      flor-explodes_12: -1753930526
+      flor-explodes_13: 752837841
+      flor-explodes_14: 1221277527
+      flor-explodes_15: 1491197108
+      flor-explodes_16: -1509394195
+      flor-explodes_17: 260641128
+      flor-explodes_18: -1938738528
+      flor-explodes_19: -6624294
+      flor-explodes_2: 1404203786
+      flor-explodes_20: 960734979
+      flor-explodes_21: -654927938
+      flor-explodes_22: 1252272731
+      flor-explodes_23: -1256145131
+      flor-explodes_24: 911225939
+      flor-explodes_25: -399226730
+      flor-explodes_26: 270677675
+      flor-explodes_27: 1291396770
+      flor-explodes_28: -1558947214
+      flor-explodes_29: -413418023
+      flor-explodes_3: -369708905
+      flor-explodes_30: 1108042615
+      flor-explodes_31: -917243548
+      flor-explodes_4: 949105289
+      flor-explodes_5: 2101095157
+      flor-explodes_6: -1230663584
+      flor-explodes_7: -1994951279
+      flor-explodes_8: -1651634946
+      flor-explodes_9: -840390815
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
