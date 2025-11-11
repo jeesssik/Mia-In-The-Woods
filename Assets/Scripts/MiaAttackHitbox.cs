@@ -2,15 +2,31 @@ using UnityEngine;
 
 public class MiaAttackHitbox : MonoBehaviour
 {
-    public int damageToEnemy = 1; // daño del ataque
+    [Tooltip("Daño que hace este hitbox")]
+    public int damage = 1;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    // evita pegar varias veces en la misma ventana de ataque
+    private bool alreadyHitThisSwing = false;
+
+    private void OnEnable()
     {
-        // Si golpea a la flor, ejecuta su método ReceiveHit()
-        FlorController flor = collision.GetComponent<FlorController>();
+        // cada vez que el hitbox se activa, reseteamos la bandera
+        alreadyHitThisSwing = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (alreadyHitThisSwing) return;
+
+        // busco si el collider pertenece a una flor (o a su padre)
+        FlorController flor = other.GetComponentInParent<FlorController>();
         if (flor != null)
         {
-            flor.ReceiveHit(); // aquí podés pasar daño si lo manejás por vida
+            // Llamo al método público que reduce vida en la flor
+            flor.ReceiveHit(damage); // <-- usaremos la versión con parámetro
+            alreadyHitThisSwing = true;
+            Debug.Log($"AttackHitbox: golpeó a {flor.name} por {damage}");
+            return;
         }
     }
 }

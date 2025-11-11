@@ -6966,8 +6966,11 @@ MonoBehaviour:
   currentTarget: {fileID: 1054473473}
   playerTag: Player
   flowerUI: {fileID: 1996415144}
+  maxHealth: 3
   minAttackCooldown: 1.5
   maxAttackCooldown: 4
+  impactDelay: 0.25
+  estimatedAttackDuration: 0.4
   playerDetected: 0
   playerInAttackRange: 0
   isAttacking: 0
@@ -8026,7 +8029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94b90e0cc8c532a4da156a21cb5da20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageToEnemy: 1
+  damage: 1
 --- !u!61 &1593251864
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9391,6 +9394,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1996415145}
+  - component: {fileID: 1996415146}
   m_Layer: 5
   m_Name: FlorHealth
   m_TagString: Untagged
@@ -9421,6 +9425,22 @@ RectTransform:
   m_AnchoredPosition: {x: 16, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1996415146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996415144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf71badfc441fc74e87a90f37e4efa54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hearts:
+  - {fileID: 1695715891}
+  - {fileID: 178256956}
+  - {fileID: 491110888}
 --- !u!1 &2019768013
 GameObject:
   m_ObjectHideFlags: 0
