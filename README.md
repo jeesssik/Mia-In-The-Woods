@@ -1,172 +1,92 @@
 # 🕹️ Proyecto Final de Animación – Unity 2D Pixel Art  
-### *Integración de animaciones en entorno interactivo (Opción Máxima)*  
+### *Opción Máxima — Integración de animaciones en entorno interactivo*
 
 ---
 
 ## 📘 Introducción  
 
-Este proyecto fue desarrollado en **Unity 2D** y tiene como objetivo integrar animaciones originales dentro de un entorno interactivo, donde las acciones del personaje respondan a la entrada del jugador.  
+Este proyecto fue desarrollado en **Unity 2022.4.2f1** como parte de la materia **Animación de Videojuegos**.  
+El objetivo principal es **integrar animaciones originales dentro de un entorno interactivo**, donde las acciones de los personajes respondan a eventos del juego y entradas del usuario.
 
-El personaje principal, **Mia**, fue diseñado y animado cuadro a cuadro en pixel art. Se implementaron animaciones para los tres estados esenciales de un juego de acción o plataformas: **Idle**, **Jump** y **Attack**, aplicando de forma visible parte de los **Doce Principios de la Animación** en un contexto digital interactivo.  
+El proyecto incluye **dos personajes completamente animados cuadro por cuadro en pixel art**:
 
-El personaje secundario, al igual que Mia due diseñado cuadro por cuadro pero con más detalle en las animaciones. Sus estados son **Idle**, **Detect**, **Run**, **Attack**, **Imapct** y **Death**, aplicando también parte de los **Doce Principios de la Animación**
+| Personaje | Tipo | Control |
+|----------|------|---------|
+| **Mia** | Protagonista | Jugador |
+| **Flor** | Enemigo | IA (FSM + colliders y triggers) |
 
----
-
-## 🎨 Arte y Diseño Visual  
-
-### 🧑‍🎨 Creación de Sprites  
-
-Todo el arte visual y las animaciones fueron creados desde cero, sprite por sprite, utilizando herramientas de pixel art.  
-
-**Herramientas utilizadas:**
-- 🎨 **LibreSprite** — diseño y animación de *Mia* (pixel art, sprites y hojas de sprites).  
-- 🌆 **Pixel Studio** — dibujo del background animado en capas.  
+Ambos aplican principios clásicos de animación adaptados al pixel art y a mecánicas de gameplay 2D.
 
 ---
 
-### 📂 Sprites y Animaciones  
+## 🎨 Herramientas utilizadas  
 
-A continuación se muestran las animaciones principales del personaje:  
-
-#### 💤 Idle (Reposo)  
-- Loop de 2 segundos que transmite la personalidad atenta y curiosa de Mia.  
-- **Principios aplicados:** *Anticipation, Slow In & Out, Overlapping Action*  
-
-![Idle Animation](Assets/Sprites/GIFs/idle.gif)
+| Área | Software |
+|------|----------|
+| Pixel Art y Animación | Aseprite |
+| Motor de juego | Unity 2022.4.2f1 |
+| Scripting | C# + Visual Studio Code |
 
 ---
 
-#### 🪂 Jump (Salto completo)  
-- Incluye anticipación, ascenso, caída y aterrizaje.  
-- **Principios aplicados:** *Timing, Arcs, Follow Through*  
-
-![Jump Animation](Assets/Sprites/GIFs/jump.gif)
+# 🧩 Personajes & Animaciones
 
 ---
 
-#### ⚔️ Attack (Ataque)  
-- Acción ofensiva breve con énfasis en fuerza y recoil.  
-- **Principios aplicados:** *Squash & Stretch, Exaggeration, Anticipation*  
+## 🟣 Mia — Personaje Jugable
 
-![Attack Animation](Assets/Sprites/GIFs/attack.gif)
+🖼️ **Vista previa de animaciones**  
+![Mia Preview](docs/gifs/mia.gif)
 
----
-
-#### 🌄 Background Animado  
-- Fondo dibujado en capas independientes para generar profundidad con efecto *parallax*.  
-
-![Background Animation](Assets/Sprites/GIFs/background.gif)
-
----
-
-## ⚙️ Implementación en Unity  
-
-### 💡 Integración en el Motor  
-Las animaciones fueron integradas mediante el **Animator Controller** de Unity. Cada acción se activa según la entrada del jugador.  
-
-Mia:
-- **Idle** — Estado base al iniciar.  
-- **Jump** — Activado al presionar la tecla de salto.  
-- **Attack** — Activado al presionar la tecla de ataque.  
-
-Flor:
-- **Idle** - Estado base inicial.
-- **Detect** - Detecta cuando mía entra en el rango de detección.
-- **Run** - Una vez que detecta a Mia, corre hacia a ella con el propósito de atacarla.
-- **Attack** - Ataca a Mia.
-- **Impact** - Recibe daño de ataque del jugador.
-- **Death** - Muerte del personaje
+| Animación | Función | Preview |
+|----------|---------|---------------------|
+| Idle | Reposo con micro-movimiento | ![Mia Preview](Assets/gifs/Mia-IDLE.gif) |
+| Walk/Run | Movimiento horizontal | ![Mia Preview](Assets/gifs/MiaCamina.gif) |
+| Jump | Salto con caída | ![Mia Preview](Assets/gifs/MiaSalta.gif) |
+| Attack | Ataque cuerpo a cuerpo |![Mia Preview](Assets/gifs/pelea.gif) |
 
 ---
 
-### 🔄 Transiciones de Estado  
+## 🌼 Flor — Enemigo (IA)
 
-| Estado de origen | Acción del jugador | Estado destino |
-|------------------|-------------------|----------------|
-| Idle             | Salto             | Jump           |
-| Jump             | Aterrizaje        | Idle           |
-| Idle             | Ataque            | Attack         |
-| Attack           | Fin de animación  | Idle           |
+🖼️ **Vista previa de animaciones**  
+![Flor Preview](docs/gifs/flor.gif)
 
-*(Debajo podés incluir una captura del diagrama del Animator.)*
+| Animación | Activación | Preview |
+|----------|------------|--------------------|
+| Idle | Estado base |![Flor Preview](Assets/gifs/Flor-idle.gif)|
+| Detect | Entra jugador en rango | ![Flor Preview](Assets/gifs/Flor-detect%20(1).gif) |
+| Run | Persigue a Mia | ![Flor Preview](Assets/gifs/flor-corre-gif.gif) |
+| Attack | Golpea al jugador | ![Flor Preview](Assets/gifs/flor-ataca.gif) |
+| Hit | Recibe daño | ![Flor Preview](Assets/gifs/flor-hit.gif) |
+|  Death | Muere con fade-out | ![Flor Preview](Assets/gifs/flor-explodes.gif) |
 
----
-
-
-
-## 🧩 Principios de Animación Aplicados  
-
-| Principio | Aplicación en el Proyecto |
-|------------|---------------------------|
-| **Squash & Stretch** | Deformación del cuerpo en impacto y aterrizaje. |
-| **Anticipation** | Movimiento preparatorio previo al salto y ataque. |
-| **Follow Through / Overlapping Action** | Movimiento residual en cabello y ropa durante el reposo. |
-| **Timing & Spacing** | Ajuste de ritmo y peso en el salto y caída. |
-| **Arcs** | Trayectorias curvas en los movimientos del salto y ataque. |
-| **Exaggeration** | Énfasis visual en la fuerza del golpe y la reacción. |
+> 🔹 La UI de vida de *Flor* aparece solo cuando detecta a Mia.
 
 ---
 
-## 🎥 Demostración Interactiva  
+# ⚙️ Implementación en Unity
 
-Se incluye un breve video de gameplay (30–60 segundos) que muestra las animaciones en tiempo real, las transiciones entre estados y la respuesta a los controles del jugador.  
+## 🔁 Animators y FSM (Máquinas de Estado)
 
-🎬 [Ver Video de Gameplay](Assets/Videos/gameplay.mp4)
+Cada personaje posee su propio **Animator Controller**, conectado a scripts C# que controlan estados como:
 
----
-
-## 🧾 Documentación Analítica  
-
-Este documento acompaña al proyecto y analiza la aplicación de los principios de animación, el proceso de diseño y las decisiones conceptuales tomadas.  
-
-📄 [Descargar Documento Analítico (PDF)](Documentacion/AnalisisPrincipios.pdf)
-
----
-
-## 🧰 Herramientas Utilizadas  
-
-- 🧩 **Unity 2D** — implementación de animaciones y control interactivo.  
-- 🎨 **LibreSprite** — creación de sprites del personaje.  
-- 🖌️ **Pixel Studio** — arte de fondo animado.  
-- 🧠 **Visual Studio Code** — scripting y control de animaciones.  
+- Movimiento
+- Ataque
+- Daño
+- Muerte
+- Transiciones condicionales
+- Colliders tipo Trigger para detección y combate
 
 ---
 
-## 📁 Estructura del Proyecto  
+## 🎯 Mecánicas principales
 
-```
-/Assets
- ├── Sprites/
- │   ├── Mia_Idle.png
- │   ├── Mia_Jump.png
- │   ├── Mia_Attack.png
- │   └── Background_Layers/
- ├── Sprites/GIFs/
- │   ├── idle.gif
- │   ├── jump.gif
- │   ├── attack.gif
- │   └── background.gif
- ├── Animations/
- │   ├── Idle.anim
- │   ├── Jump.anim
- │   └── Attack.anim
- ├── Scripts/
- │   └── PlayerController.cs
- ├── Scenes/
- │   └── MainScene.unity
- ├── Videos/
- │   └── gameplay.mp4
- └── README.md
-```
+| Mecánica | Implementación |
+|---------|---------------|
+| Ataque de Mia | Hitbox activado por AnimationEvent |
+| Daño a Flor | Detecta colisión con hitbox |
+| Vida de ambos personajes | UI en corazones actualizada en tiempo real |
+| IA de Flor | Detección → persecución → ataque con cooldown |
+| Muerte | Animación + fade out + destroy |
 
----
-
-## 🧩 Conclusión  
-
-Este proyecto permitió trasladar los principios clásicos de la animación al contexto de un videojuego interactivo.  
-El trabajo en Unity reforzó la comprensión de cómo el *timing*, la *anticipación* y el *follow through* afectan la percepción del peso, la energía y la fluidez del movimiento en tiempo real.  
-
----
-
-© 2025 — Proyecto Final de Animación • Desarrollado en Unity 2D Pixel Art
