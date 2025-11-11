@@ -102,23 +102,29 @@ public class FlorController : MonoBehaviour
     }
 
     IEnumerator DoAttack()
-    {
-        isAttacking = true;
-        canAttack = false;
+{
+    isAttacking = true;
+    canAttack = false;
 
-        animator.SetTrigger("Attack");
+    animator.SetTrigger("Attack");
 
-        // opcional: llamar EnableHitbox via AnimationEvent o usar aquí para breve demo:
-        // EnableHitbox();
+    // Esperar hasta que llegue el frame del golpe (puede ajustarse al timing real de la animación)
+    yield return new WaitForSeconds(0.25f);
 
-        float estimatedAttackDuration = 0.6f;
-        yield return new WaitForSeconds(estimatedAttackDuration);
+    // Si sigue dentro del rango y el target existe, aplicar daño
+    if (playerInAttackRange && currentTarget != null)
+        DamagePlayer();
 
-        isAttacking = false;
-        yield return new WaitForSeconds(attackCooldown);
-        canAttack = true;
-    }
+    // Termina ataque (resto de animación)
+    float estimatedAttackDuration = 0.4f;
+    yield return new WaitForSeconds(estimatedAttackDuration);
 
+    isAttacking = false;
+
+    // Cooldown entre ataques
+    yield return new WaitForSeconds(attackCooldown);
+    canAttack = true;
+}
     // --- Métodos públicos llamados por TriggerDelegator en los colliders hijos ---
 
     public void OnDetectionEnter(Transform player)
@@ -179,13 +185,16 @@ public class FlorController : MonoBehaviour
     }
 
     // Método que el Animation Event puede llamar para aplicar daño al jugador
-    public void DamagePlayer()
+   private void DamagePlayer()
+{
+    if (currentTarget != null)
     {
-        if (currentTarget != null)
+        Mia player = currentTarget.GetComponent<Mia>();
+        if (player != null)
         {
-            Mia player = currentTarget.GetComponent<Mia>();
-            if (player != null)
-                player.RecibirDaño(1);
+            player.RecibirDaño(1);
+            Debug.Log("🌼 La flor dañó a Mia (-1 vida)");
         }
     }
+}
 }

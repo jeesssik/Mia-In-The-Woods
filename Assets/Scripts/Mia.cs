@@ -47,6 +47,9 @@ public class Mia : MonoBehaviour
         // Asegurarnos que el hitbox esté desactivado por defecto
         if (attackHitbox != null)
             attackHitbox.SetActive(false);
+
+            if (HealthUI.Instance != null)
+    HealthUI.Instance.UpdateHearts(vidaActual);
     }
 
     void Update()
@@ -162,19 +165,24 @@ public class Mia : MonoBehaviour
     }
 
     public void RecibirDaño(int cantidad)
-    {
-        if (estaMuerta) return;
+{
+    if (estaMuerta) return;
 
-        vidaActual -= cantidad;
-        if (vidaActual <= 0)
-        {
-            Muerte();
-        }
-        else
-        {
-            if (animator) animator.SetTrigger("Hurt");
-        }
+    vidaActual -= cantidad;
+
+    // Actualizar UI
+    if (HealthUI.Instance != null)
+        HealthUI.Instance.UpdateHearts(vidaActual);
+
+    if (vidaActual <= 0)
+    {
+        Muerte();
     }
+    else
+    {
+        if (animator) animator.SetTrigger("Hurt");
+    }
+}
 
     private void Muerte()
     {
