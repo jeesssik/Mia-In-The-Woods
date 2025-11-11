@@ -6738,6 +6738,8 @@ MonoBehaviour:
   attackCollider: {fileID: 1698755607}
   currentTarget: {fileID: 1054473473}
   playerTag: Player
+  minAttackCooldown: 1.5
+  maxAttackCooldown: 4
   playerDetected: 0
   playerInAttackRange: 0
   isAttacking: 0

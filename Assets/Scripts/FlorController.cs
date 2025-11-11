@@ -20,6 +20,9 @@ public class FlorController : MonoBehaviour
     public Transform currentTarget; // normalmente el player (se setea al detectar)
     public string playerTag = "Player";
 
+    public float minAttackCooldown = 1.5f;
+    public float maxAttackCooldown = 3.0f;
+
     // Internos
     private Animator animator;
     private SpriteRenderer sr;
@@ -102,29 +105,30 @@ public class FlorController : MonoBehaviour
     }
 
     IEnumerator DoAttack()
-{
-    isAttacking = true;
-    canAttack = false;
+    {
+        isAttacking = true;
+        canAttack = false;
 
-    animator.SetTrigger("Attack");
+        animator.SetTrigger("Attack");
 
-    // Esperar hasta que llegue el frame del golpe (puede ajustarse al timing real de la animación)
-    yield return new WaitForSeconds(0.25f);
+        // Esperar hasta que llegue el frame del golpe (puede ajustarse al timing real de la animación)
+        yield return new WaitForSeconds(0.25f);
 
-    // Si sigue dentro del rango y el target existe, aplicar daño
-    if (playerInAttackRange && currentTarget != null)
-        DamagePlayer();
+        // Si sigue dentro del rango y el target existe, aplicar daño
+        if (playerInAttackRange && currentTarget != null)
+            DamagePlayer();
 
-    // Termina ataque (resto de animación)
-    float estimatedAttackDuration = 0.4f;
-    yield return new WaitForSeconds(estimatedAttackDuration);
+        // Termina ataque (resto de animación)
+        float estimatedAttackDuration = 0.4f;
+        yield return new WaitForSeconds(estimatedAttackDuration);
 
-    isAttacking = false;
+        isAttacking = false;
 
-    // Cooldown entre ataques
-    yield return new WaitForSeconds(attackCooldown);
-    canAttack = true;
-}
+        // cooldown entre ataques (aleatorio)
+        float cd = Random.Range(minAttackCooldown, maxAttackCooldown);
+        yield return new WaitForSeconds(cd);
+        canAttack = true;
+    }
     // --- Métodos públicos llamados por TriggerDelegator en los colliders hijos ---
 
     public void OnDetectionEnter(Transform player)
@@ -185,16 +189,16 @@ public class FlorController : MonoBehaviour
     }
 
     // Método que el Animation Event puede llamar para aplicar daño al jugador
-   private void DamagePlayer()
-{
-    if (currentTarget != null)
+    private void DamagePlayer()
     {
-        Mia player = currentTarget.GetComponent<Mia>();
-        if (player != null)
+        if (currentTarget != null)
         {
-            player.RecibirDaño(1);
-            Debug.Log("🌼 La flor dañó a Mia (-1 vida)");
+            Mia player = currentTarget.GetComponent<Mia>();
+            if (player != null)
+            {
+                player.RecibirDaño(1);
+                Debug.Log("🌼 La flor dañó a Mia (-1 vida)");
+            }
         }
     }
-}
 }
