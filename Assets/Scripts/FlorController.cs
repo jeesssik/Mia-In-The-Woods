@@ -1,8 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator), typeof(SpriteRenderer), typeof(Rigidbody2D))]
@@ -20,6 +16,11 @@ public class FlorController : MonoBehaviour
     public Transform currentTarget; // normalmente el player (se setea al detectar)
     public string playerTag = "Player";
 
+    [Header("UI")]
+    [Tooltip("Asignar el GameObject del UI que muestra la vida de la flor (ej: FlorHealth)")]
+    public GameObject flowerUI;
+
+    [Header("Cooldowns (ataque)")]
     public float minAttackCooldown = 1.5f;
     public float maxAttackCooldown = 3.0f;
 
@@ -32,8 +33,7 @@ public class FlorController : MonoBehaviour
     public bool isAttacking = false;
     private bool isDead = false;
 
-    // Cooldowns
-    public float attackCooldown = 1f;
+    // Control de ataque
     private bool canAttack = true;
 
     void Awake()
@@ -44,6 +44,10 @@ public class FlorController : MonoBehaviour
 
         if (detectionCollider == null || attackCollider == null)
             Debug.LogWarning("Asigná Detection y Attack colliders en el inspector.");
+
+        // UI oculto por defecto (si fue asignado)
+        if (flowerUI != null)
+            flowerUI.SetActive(false);
     }
 
     void Update()
@@ -106,19 +110,22 @@ public class FlorController : MonoBehaviour
 
     IEnumerator DoAttack()
     {
+        // protección: evitar múltiples corrutinas
+        if (isAttacking || !canAttack) yield break;
+
         isAttacking = true;
         canAttack = false;
 
         animator.SetTrigger("Attack");
 
-        // Esperar hasta que llegue el frame del golpe (puede ajustarse al timing real de la animación)
+        // Esperar hasta el frame del golpe (ajustar según tu animación)
         yield return new WaitForSeconds(0.25f);
 
         // Si sigue dentro del rango y el target existe, aplicar daño
         if (playerInAttackRange && currentTarget != null)
             DamagePlayer();
 
-        // Termina ataque (resto de animación)
+        // Esperar el resto de la animación (fallback)
         float estimatedAttackDuration = 0.4f;
         yield return new WaitForSeconds(estimatedAttackDuration);
 
@@ -129,6 +136,7 @@ public class FlorController : MonoBehaviour
         yield return new WaitForSeconds(cd);
         canAttack = true;
     }
+
     // --- Métodos públicos llamados por TriggerDelegator en los colliders hijos ---
 
     public void OnDetectionEnter(Transform player)
@@ -136,6 +144,10 @@ public class FlorController : MonoBehaviour
         playerDetected = true;
         currentTarget = player;
         animator.SetTrigger("Detect");
+
+        // Mostrar UI cuando detecta al jugador
+        if (flowerUI != null)
+            flowerUI.SetActive(true);
     }
 
     public void OnDetectionExit(Transform player)
@@ -145,6 +157,10 @@ public class FlorController : MonoBehaviour
         currentTarget = null;
         playerInAttackRange = false;
         animator.SetFloat("Speed", 0f);
+
+        // Ocultar UI cuando pierde al jugador
+        if (flowerUI != null)
+            flowerUI.SetActive(false);
     }
 
     public void OnAttackEnter(Transform player)
@@ -152,8 +168,6 @@ public class FlorController : MonoBehaviour
         // Al entrar en el rango de ATTACK: deja de correr y empezará a atacar (Update gestionará DoAttack)
         playerInAttackRange = true;
         currentTarget = player;
-        // opcional: forzar que deje de moverse
-        // isAttacking = false; // no lo ponemos true aquí; DoAttack lo hace
         Debug.Log("Flor: jugador en rango de ataque -> dejar de correr, empezar ataque");
     }
 
@@ -175,6 +189,10 @@ public class FlorController : MonoBehaviour
         isDead = true;
         animator.SetTrigger("Die");
         animator.SetBool("IsDead", true);
+
+        // ocultar UI al morir
+        if (flowerUI != null)
+            flowerUI.SetActive(false);
     }
 
     // Método opcional llamado por Animation Event
