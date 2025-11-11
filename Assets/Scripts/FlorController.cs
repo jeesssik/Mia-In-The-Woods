@@ -4,7 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(Animator), typeof(SpriteRenderer), typeof(Rigidbody2D))]
 public class FlorController : MonoBehaviour
 {
-   
+
     [Header("Movimiento")]
     public float moveSpeed = 2f;
     public float stopDistance = 0.2f;
@@ -162,26 +162,35 @@ public class FlorController : MonoBehaviour
     // ------------- Detección (estos métodos los llama el TriggerDelegator en los child triggers) -------------
     public void OnDetectionEnter(Transform player)
     {
+        Debug.Log("Flor: OnDetectionEnter llamado");
         playerDetected = true;
         currentTarget = player;
         animator.SetTrigger("Detect");
 
-        // Mostrar UI cuando detecta al jugador
         if (flowerUI != null)
+        {
             flowerUI.SetActive(true);
+            Debug.Log("Flor: flowerUI activado");
+        }
+        else
+        {
+            Debug.LogWarning("Flor: flowerUI no asignado en el inspector!");
+        }
     }
 
     public void OnDetectionExit(Transform player)
     {
-        // si sale el player detectado, reiniciar
+        Debug.Log("Flor: OnDetectionExit llamado");
         playerDetected = false;
         currentTarget = null;
         playerInAttackRange = false;
         animator.SetFloat("Speed", 0f);
 
-        // Ocultar UI cuando pierde al jugador
         if (flowerUI != null)
+        {
             flowerUI.SetActive(false);
+            Debug.Log("Flor: flowerUI desactivado");
+        }
     }
 
     public void OnAttackEnter(Transform player)
@@ -205,29 +214,74 @@ public class FlorController : MonoBehaviour
         currentHealth -= damage;
         currentHealth = Mathf.Max(0, currentHealth);
 
-        // animación de hit
+        Debug.Log($"Flor: recibió {damage} de daño. Vida actual = {currentHealth}");
+
         animator.SetTrigger("Hit");
 
-        // actualizar UI local si existe
         if (flowerHealthUI != null)
             flowerHealthUI.UpdateHearts(currentHealth);
 
-        Debug.Log($"Flor: recibió {damage} de daño. Vida actual = {currentHealth}");
-
         if (currentHealth <= 0)
+        {
             Die();
+        }
     }
 
+    // --- morir con fallback a anim.Play y espera dinámica ---
     public void Die()
     {
         if (isDead) return;
         isDead = true;
-        animator.SetTrigger("Die");
-        animator.SetBool("IsDead", true);
 
-        // ocultar UI al morir
-        if (flowerUI != null)
-            flowerUI.SetActive(false);
+        Debug.Log("Flor.Die() llamada");
+
+        // apagar colisiones y física para que no interfieran
+        Collider2D c = GetComponent<Collider2D>();
+        if (c != null) c.enabled = false;
+        if (rb != null) rb.simulated = false;
+
+        // ocultar UI (si querés que desaparezca al morir)
+        if (flowerUI != null) flowerUI.SetActive(false);
+
+        // Intentamos primero con parámetros (por si el Animator está bien configurado)
+        try
+        {
+            animator.SetBool("IsDead", true);
+            animator.SetTrigger("Die");
+        }
+        catch { }
+
+        // FORZAR reproducción directa del clip "Flor-Explodes" como fallback
+        // (asegurate que el nombre coincide exactamente con el state/clip)
+        string deathClipName = "Flor-Explodes"; // ajustá si tu clip se llama distinto
+        animator.Play(deathClipName, 0, 0f);
+
+        // Esperar a que termine el clip y destruir
+        StartCoroutine(WaitAnimationAndDestroy(deathClipName));
+    }
+
+    private IEnumerator WaitAnimationAndDestroy(string clipName)
+    {
+        // Intentar encontrar la duración del clip en el controller
+        float clipLength = 0.75f; // fallback
+        var runtime = animator.runtimeAnimatorController;
+        if (runtime != null)
+        {
+            foreach (var clip in runtime.animationClips)
+            {
+                if (clip.name == clipName)
+                {
+                    clipLength = clip.length;
+                    break;
+                }
+            }
+        }
+
+        // Esperamos el tiempo del clip (un poco extra por seguridad)
+        yield return new WaitForSeconds(clipLength + 0.05f);
+
+        // destrucción final
+        Destroy(gameObject);
     }
 
     // Llamado por Animation Event al finalizar la muerte (si lo tenés configurado)
