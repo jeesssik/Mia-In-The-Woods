@@ -50,6 +50,16 @@ public class FlorController : MonoBehaviour
     private int currentHealth;
     private FlowerHealthUI flowerHealthUI;
 
+
+
+    public float fadeDuration = 0.6f;
+
+    public bool doShrink = true;
+
+    public float finalScale = 0.6f;
+
+    public bool fadeFlowerUI = true;
+
     void Awake()
     {
         animator = GetComponent<Animator>();
@@ -262,7 +272,7 @@ public class FlorController : MonoBehaviour
 
     private IEnumerator WaitAnimationAndDestroy(string clipName)
     {
-        // Intentar encontrar la duración del clip en el controller
+        // --- 1) obtener la duración del clip (fallback) ---
         float clipLength = 0.75f; // fallback
         var runtime = animator.runtimeAnimatorController;
         if (runtime != null)
@@ -277,13 +287,80 @@ public class FlorController : MonoBehaviour
             }
         }
 
-        // Esperamos el tiempo del clip (un poco extra por seguridad)
-        yield return new WaitForSeconds(clipLength + 0.05f);
+        // esperar que termine la animación (si la reproducimos con Play, ya arrancó)
+        yield return new WaitForSeconds(clipLength);
 
-        // destrucción final
+        // --- 2) preparar para el fade: obtener todos los SpriteRenderers ---
+        SpriteRenderer[] srs = GetComponentsInChildren<SpriteRenderer>(true);
+
+        // si hay UI y queremos hacer fade y no tiene CanvasGroup, intentamos agregar uno
+        CanvasGroup uiCg = null;
+        if (flowerUI != null && fadeFlowerUI)
+        {
+            uiCg = flowerUI.GetComponent<CanvasGroup>();
+            if (uiCg == null)
+            {
+                uiCg = flowerUI.AddComponent<CanvasGroup>();
+                // si el UI debería estar oculto después de morir, lo dejamos interactable false
+                uiCg.interactable = false;
+                uiCg.blocksRaycasts = false;
+            }
+        }
+
+        // valores iniciales
+        float elapsed = 0f;
+
+        // guardamos colores originales (para restaurar alfa relativo)
+        Color[] originalColors = new Color[srs.Length];
+        for (int i = 0; i < srs.Length; i++)
+            originalColors[i] = srs[i].color;
+
+        Vector3 startScale = transform.localScale;
+        Vector3 targetScale = doShrink ? startScale * finalScale : startScale;
+
+        // --- 3) fade loop ---
+        while (elapsed < fadeDuration)
+        {
+            elapsed += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsed / fadeDuration);
+            float a = Mathf.Lerp(1f, 0f, t);
+
+            // aplicar alfa a todos los sprite renderers
+            for (int i = 0; i < srs.Length; i++)
+            {
+                if (srs[i] == null) continue;
+                Color c = originalColors[i];
+                c.a = a;
+                srs[i].color = c;
+            }
+
+            // shrink
+            if (doShrink)
+                transform.localScale = Vector3.Lerp(startScale, targetScale, t);
+
+            // fade UI
+            if (uiCg != null)
+                uiCg.alpha = 1f - t;
+
+            yield return null;
+        }
+
+        // asegurar valores finales
+        for (int i = 0; i < srs.Length; i++)
+        {
+            if (srs[i] == null) continue;
+            Color c = originalColors[i];
+            c.a = 0f;
+            srs[i].color = c;
+        }
+        if (doShrink) transform.localScale = targetScale;
+        if (uiCg != null) uiCg.alpha = 0f;
+
+        // espera cortita opcional para que el fade termine visualmente
+        yield return new WaitForSeconds(0.02f);
+
         Destroy(gameObject);
     }
-
     // Llamado por Animation Event al finalizar la muerte (si lo tenés configurado)
     public void OnDieAnimationEnd()
     {

@@ -21,6 +21,8 @@ public class TriggerDelegator : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log($"TriggerDelegator: OnTriggerEnter2D con {other.name} (tag={other.tag}), tipo={triggerType}");
+   
         if (florController == null) return;
         if (!other.CompareTag(florController.playerTag)) return;
 
@@ -32,6 +34,8 @@ public class TriggerDelegator : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
+         Debug.Log($"TriggerDelegator: OnTriggerExit2D con {other.name} (tag={other.tag}), tipo={triggerType}");
+   
         if (florController == null) return;
         if (!other.CompareTag(florController.playerTag)) return;
 

@@ -6974,6 +6974,10 @@ MonoBehaviour:
   playerDetected: 0
   playerInAttackRange: 0
   isAttacking: 0
+  fadeDuration: 0.6
+  doShrink: 1
+  finalScale: 0.6
+  fadeFlowerUI: 1
 --- !u!50 &1306555379
 Rigidbody2D:
   serializedVersion: 4
@@ -9420,9 +9424,9 @@ RectTransform:
   - {fileID: 1695715890}
   m_Father: {fileID: 558126758}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 16, y: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -508, y: -264}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1996415146
